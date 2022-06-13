@@ -19,6 +19,7 @@ Create a tool in Python that accepts a piece of text as input and returns a reph
 
 3. [Download model configurations](https://s3.console.aws.amazon.com/s3/buckets/fbf-interview-project?region=eu-west-3&tab=objects) and store inside a directory called `model_dir`
     - I made the bucket ***completely public*** but if there are issues, let me know and I can send configurations some other way
+    - At last resort, retraining the model would produce the appropriate configurations.
 
 4. `cd` into `app` directory
 

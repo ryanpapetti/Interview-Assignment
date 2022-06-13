@@ -8,6 +8,40 @@
 
 Create a tool in Python that accepts a piece of text as input and returns a rephrased version of the text that is "better", as well as an explanation of why the text is "better". What "better" means is up to you, and you can scope the text to a more specific use case.
 
+
+### Implementation
+
+#### Accessing Web App (without training model)
+
+1. Create/activate a new virtual environment using the provided `requirements.txt`
+
+2. `cd` into `grammar_corrector` directory
+
+3. Download model configurations and store inside a directory called `model_dir`
+
+4. `cd` into `app` directory
+
+5. Run `python main.py` and open browser to `http://127.0.0.1:8095/`
+
+6. App should be running!
+#### Accessing Web App (with training model)
+
+
+1. Create/activate a new virtual environment using the provided `requirements.txt`
+
+2. `cd` into `grammar_corrector` directory
+
+3. Run `python train.py` or run each cell in `model_training_exploration.ipynb`
+
+4. After model training, model and updated data are added to `model_dir` and `data`, respectively
+
+5. `cd` into `app` directory
+
+6. Run `python main.py` and open browser to `http://127.0.0.1:8095/`
+
+7. App should be running!
+
+
 ### Implementation Overview
 
 - Used HuggingFace T5-Base Text2Text Transformer and HuggingFace jfleg grammatical error correction dataset to train model

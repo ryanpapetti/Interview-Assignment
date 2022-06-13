@@ -52,8 +52,6 @@ Create a tool in Python that accepts a piece of text as input and returns a reph
 ├── app
 │   ├── __init__.py
 │   ├── main.py
-│   ├── __pycache__
-│   │   └── utils.cpython-39.pyc
 │   ├── static
 │   │   ├── duck2.gif
 │   │   ├── index.css
@@ -70,7 +68,6 @@ Create a tool in Python that accepts a piece of text as input and returns a reph
 ├── deployment.ipynb
 ├── model_dir
 │   ├── config.json
-│   ├── model.tar.gz
 │   ├── pytorch_model.bin
 │   ├── special_tokens_map.json
 │   ├── spiece.model

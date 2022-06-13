@@ -86,6 +86,13 @@ Create a tool in Python that accepts a piece of text as input and returns a reph
 - Built rudimentary client-side demo in a Flask app that allows user to input text, see suggested corrections, and generate again if need be. 
 
 
+
+#### Implementation Example
+
+![Example of Ryan's implementation](demo_screenshot.png)
+
+## Reflection
+
 ### Getting Started 
 
 - Originally, I was torn between three ideas on how to make text "better":

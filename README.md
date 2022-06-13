@@ -31,7 +31,7 @@ Create a tool in Python that accepts a piece of text as input and returns a reph
 
 2. `cd` into `grammar_corrector` directory
 
-3. Run `python train.py` or run each cell in `model_training_exploration.ipynb`
+3. Run `python train.py` or run each cell in `model_training_exploration.ipynb`. Some output will print.
 
 4. After model training, model and updated data are added to `model_dir` and `data`, respectively
 

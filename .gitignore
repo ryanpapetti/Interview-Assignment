@@ -1,5 +1,5 @@
 Gramformer/
 venv/
-data/
+# data/
 model_dir/
 *.pyc

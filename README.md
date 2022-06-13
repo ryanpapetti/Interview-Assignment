@@ -118,7 +118,8 @@ In order of perceived importance...
 1. Either create or find a larger dataset (with same or higher quality instances)
 2. Augment model with a fluency scoring model (for improving output's readability)
 3. Benchmark/compare model against state-of-the-art implementations (such as [Grammarly's GECTOR](https://github.com/grammarly/gector))
-4. Further preprocess data with regex or manual editing to improve data quality 
+4. Further preprocess data with regex or manual editing to improve data quality
+5. Dockerize Flask app (had too many bugs) 
 
 
 

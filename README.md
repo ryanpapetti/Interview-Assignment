@@ -44,7 +44,43 @@ Create a tool in Python that accepts a piece of text as input and returns a reph
 7. App should be running!
 
 
-### Implementation Overview
+
+#### Final grammar_corrector tree structure
+
+```
+.
+├── app
+│   ├── __init__.py
+│   ├── main.py
+│   ├── __pycache__
+│   │   └── utils.cpython-39.pyc
+│   ├── static
+│   │   ├── duck2.gif
+│   │   ├── index.css
+│   │   ├── jquery.js
+│   │   ├── nicepage.css
+│   │   ├── nicepage.js
+│   │   └── text_correction.js
+│   ├── templates
+│   │   └── index.html
+│   └── utils.py
+├── data
+│   ├── jfleg_eval.csv
+│   └── jfleg_train.csv
+├── deployment.ipynb
+├── model_dir
+│   ├── config.json
+│   ├── model.tar.gz
+│   ├── pytorch_model.bin
+│   ├── special_tokens_map.json
+│   ├── spiece.model
+│   ├── tokenizer_config.json
+│   └── tokenizer.json
+├── model_training_exploration.ipynb
+└── train.py
+```
+
+#### Implementation Overview
 
 - Used HuggingFace T5-Base Text2Text Transformer and HuggingFace jfleg grammatical error correction dataset to train model
 - Performed minor data correction by text replacement; otherwise used T5 tokenizer to encode/decode data

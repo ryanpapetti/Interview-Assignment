@@ -1,0 +1,5 @@
+Gramformer/
+venv/
+data/
+model_dir/
+*.pyc

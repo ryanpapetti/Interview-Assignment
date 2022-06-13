@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+
+      <title>Rudimentary Writing Improving Tool </title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" media="screen">
+      <!-- <link rel="stylesheet" href="{{ url_for('static', filename='Page-1.css') }}" media="screen"> -->
+      <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+          <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='text_correction.js') }}" defer=""></script>
+      <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>
+      <meta name="generator" content="Nicepage 3.17.2, nicepage.com">
+      <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+      <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+      
+      
+    </head>
+    </head>
+
+    <body>
+
+      <div class="u-container-layout u-valign-bottom-md u-valign-bottom-sm u-container-layout-1">
+        <h3 class="u-align-center u-custom-font u-text u-text-1" data-animation-name="jackInTheBox" data-animation-duration="1000" data-animation-delay="0" data-animation-direction=""> How to Use Rudimentary Grammar Fixer Upper - DEMO</h3>
+        <div class="u-border-7 u-border-grey-dark-1 u-shape u-shape-bottom u-shape-right u-shape-1"></div>
+        <div class="u-rotation-parent u-rotation-parent-1">
+          <div class="u-border-7 u-border-grey-dark-1 u-rotate-180 u-shape u-shape-bottom u-shape-right u-shape-2"></div>
+        </div>
+
+                    <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                      <div class="u-container-layout u-container-layout-2">
+                        <p class="u-text u-text-2">
+                          <span style="font-weight: 400;">Start by writing a sentence or two down...<br>Press the Review button to let the AI examine and offer to correct your text
+                          </span>&nbsp;
+                        </p>
+
+
+                        <p>
+
+                          The tool works by passing your writing to a Transformer Model to use context to look for the best corrections possible.
+                        </p>
+                          
+                          
+                          <p>
+
+                            Your corrections can include grammar, spelling, and, in some cases, vocabulary replacement.
+                            
+                          </p>
+                            
+
+                          <p>
+                            This model is in DEMO and not trained well enough for production.
+                          </p>
+              
+
+
+                        <div class="u-form u-form-1 u-form-1">
+                          <form action="{{url_for('generate_text')}}" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
+                            <div class="u-form-group u-form-message">
+                              <label for="message-4af4" class="u-form-control-hidden u-label">Message</label>
+                              <textarea id="text_gen_input" placeholder="Write your sentences here..." rows="4" cols="50" name="prompt" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
+                            </div>
+                            <div class="u-align-left u-form-group u-form-submit">
+                              <a id="text_gen_button" href="#" class="u-btn u-btn-1 u-btn-submit u-button-style u-gradient u-none u-btn-1">Review</a>
+                            </div>
+                            <!-- <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div> -->
+                            <input type="hidden" value="" name="recaptchaResponse">
+                          </form>
+                        </div>
+                        <p id='loading'><img src="{{url_for('static', filename='duck2.gif')}}" height='100'> <span>Sending to model and correcting...</span></p>
+                                      <ul id="generated_ul" class="u-text u-text-2">
+                                          <!-- generated items will be here. -->
+                                      </ul>
+
+                                      <p> Not what you wanted? Try again for another generation.</p>
+                      </div>
+                    </div>
+
+
+    </body>
+</html>
